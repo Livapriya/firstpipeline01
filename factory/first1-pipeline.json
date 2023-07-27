@@ -1,0 +1,9 @@
+{
+	"name": "first1-pipeline",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d97a18fe-13c2-4576-9334-f75b3884cfaf",
+		"tenantId": "a41a58a7-e037-4d18-8d6e-6d0470549258"
+	}
+}
