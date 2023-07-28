@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": "Hydra-Movie-Scrape.csv",
 				"container": "adf-folder1"
 			}
 		}

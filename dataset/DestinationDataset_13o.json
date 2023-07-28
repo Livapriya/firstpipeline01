@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": "movies_output.csv",
 				"container": "adf-folder2"
 			}
 		}
