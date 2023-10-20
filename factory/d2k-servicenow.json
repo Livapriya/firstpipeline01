@@ -1,0 +1,9 @@
+{
+	"name": "d2k-servicenow",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3cc16cfd-179b-408d-b8b7-1db36b16d347",
+		"tenantId": "a41a58a7-e037-4d18-8d6e-6d0470549258"
+	}
+}
