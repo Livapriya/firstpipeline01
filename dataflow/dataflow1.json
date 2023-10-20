@@ -1,0 +1,64 @@
+{
+	"name": "dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "Inventory",
+						"type": "DatasetReference"
+					},
+					"name": "source1inventory"
+				},
+				{
+					"dataset": {
+						"referenceName": "Retail",
+						"type": "DatasetReference"
+					},
+					"name": "source2retail"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"source(output(",
+				"          OrderNum as string,",
+				"          OrderDate as string,",
+				"          OrderType as string,",
+				"          CustomerType as string,",
+				"          CustName as string,",
+				"          CustState as string,",
+				"          ProdCategory as string,",
+				"          ProdNumber as string,",
+				"          ProdName as string,",
+				"          Quantity as string,",
+				"          Price as string,",
+				"          Discount as string,",
+				"          {Order Total} as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> source1inventory",
+				"source(output(",
+				"          OrderNum as string,",
+				"          OrderDate as string,",
+				"          OrderType as string,",
+				"          CustomerType as string,",
+				"          CustName as string,",
+				"          CustState as string,",
+				"          ProdCategory as string,",
+				"          ProdNumber as string,",
+				"          ProdName as string,",
+				"          Quantity as string,",
+				"          Price as string,",
+				"          Discount as string,",
+				"          {Order Total} as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> source2retail"
+			]
+		}
+	}
+}

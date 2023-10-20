@@ -1,0 +1,74 @@
+{
+	"name": "Inventory",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStoragedevv",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "OnlineRetailSales",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Red30TechOnlineRetailSales.xlsx",
+				"container": "servicenoww"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "OrderNum",
+				"type": "String"
+			},
+			{
+				"name": "OrderDate",
+				"type": "String"
+			},
+			{
+				"name": "OrderType",
+				"type": "String"
+			},
+			{
+				"name": "CustomerType",
+				"type": "String"
+			},
+			{
+				"name": "CustName",
+				"type": "String"
+			},
+			{
+				"name": "CustState",
+				"type": "String"
+			},
+			{
+				"name": "ProdCategory",
+				"type": "String"
+			},
+			{
+				"name": "ProdNumber",
+				"type": "String"
+			},
+			{
+				"name": "ProdName",
+				"type": "String"
+			},
+			{
+				"name": "Quantity",
+				"type": "String"
+			},
+			{
+				"name": "Price",
+				"type": "String"
+			},
+			{
+				"name": "Discount",
+				"type": "String"
+			},
+			{
+				"name": "Order Total",
+				"type": "String"
+			}
+		]
+	}
+}
